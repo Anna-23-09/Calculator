@@ -58,7 +58,8 @@
 >> cain(1) return [n1, n2]
 
 > import calc_verify <!-- (calc_verify.py ???)  -->
->> call calc_verify(n1, n2)
+>> call calc_verify(n1, n2)>>
+
     1. + sum
         * > import calc_sum
         * > call calc_sum(n1, n2)
@@ -94,7 +95,7 @@
 
 ## complex.py —> Работа с Комплексными числами
 > import calc_verify <!-- (calc_verify.py ???)  -->
->> call calc_verify(n1, n2)
+>> call calc_verify(n1, n2)>>
 
     1. sum
     2. minus

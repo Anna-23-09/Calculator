@@ -1,5 +1,3 @@
-
-from numbers import Complex
 from cheks import menu_check
 
 def menu_inp(val: str):
@@ -9,14 +7,12 @@ def menu_inp(val: str):
     else:
         return int(res)
 
-def real_inp():
+def real_inp(val: str):
     # check
     inp = float(input('Введите выбор:'))
     return inp
 
-def complex_inp():
+def complex_inp(val: str):
     # check
-    inp = Complex(input('Введите выбор:'))
+    inp = complex(input('Введите выбор:'))
     return inp
-
-print(menu_inp())

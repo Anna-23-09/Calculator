@@ -2,18 +2,24 @@
 
 ## except.py —> Обработка исключений
 
+## input.py
+    1. input_complex.py
+    2. input_real.py
+
 ## real_num.py
-    1. sum
-    2. minus
-    3. multiply
-    4. division
-    5. power
+    1. + sum
+    2. - minus
+    3. * multiply
+    4. / division
+    5. // division
+    6. % division
+    7. ** power
+    8. **.5 sqrt
 
     9. change numbers
     0. previous menu
 
 ## complex.py —> Работа с Комплексными числами
-    
     1. sum
     2. minus
     3. multiply
@@ -30,3 +36,10 @@
     2. Complex
     0. exit
 
+
+Денис aka Goofy
+Ирина Боярчукова
+Анна Орлова
+Анна Толстова
+Арсений Беляев aza
+Вадим Борзиков

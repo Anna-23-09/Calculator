@@ -16,12 +16,12 @@ def user_nam(start: int):
 def run():
     draw_menu_start()
     
-    in_run = menu_inp('012')                # первое меню
+    in_run = menu_inp('012')                # первое меню 
     if in_run == 1:
-        draw_menu_real()                    # меню реальных чисел
+        draw_menu_real()                    # меню реальных чисел # возможный выбор 012345678
         in_start = menu_inp('012345678')
     elif in_run ==2:
-        draw_menu_complex()                 # меню комплексных чисел
+        draw_menu_complex()                 # меню комплексных чисел # возможный выбор 0123456
         in_start = menu_inp('012345678')
     else: exit
       

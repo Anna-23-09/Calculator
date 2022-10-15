@@ -1,5 +1,12 @@
-# Calculator
-
+# Calculator status WiP
+| person              | to do               |   status |   done   |  есть изменения для внесения     |
+|---|---|---|---|---|
+| Анна Толстова       | complex.py          |   |   |   |
+| Арсений Беляев aza  | conroller.py        |   |   |   |
+| Ирина Боярчукова    |                     |   |   |   |
+| Анна Орлова         |                     |   |   |   |
+| Вадим Борзиков      |                     |   |   |   |
+| Денис aka Goofy     | user_interface.py   |   | X |   |
 ## main.py
     calls controller (.py)
 
@@ -105,24 +112,3 @@
     6. sqrt
 
     0. previous menu
-
-
-
-| person   | to do |   status |  12 |13   |
-|---|---|---|---|---|
-| Анна Толстова       | complex.py          |   |   |   |
-| Арсений Беляев aza  | conroller.py        |   |   |   |
-| Ирина Боярчукова    |                     |   |   |   |
-| Анна Орлова         |                     |   |   |   |
-| Вадим Борзиков      |                     |   |   |   |
-| Денис aka Goofy     | user_interface.py   |   |   |   |
-
-
-
-
-
-
-
-
-
-

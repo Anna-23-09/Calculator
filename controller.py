@@ -15,19 +15,22 @@ def user_nam(start: int):
 
 def run():
     draw_menu_start()
-    in_run = menu_inp('012')
+    
+    in_run = menu_inp('012')                # первое меню
     if in_run == 1:
-        draw_menu_real()
+        draw_menu_real()                    # меню реальных чисел
         in_start = menu_inp('012345678')
     elif in_run ==2:
-        draw_menu_complex()
+        draw_menu_complex()                 # меню комплексных чисел
         in_start = menu_inp('012345678')
     else: exit
+      
     if in_start == 1:
         draw_result(sum.init(user_nam,user_nam))
     elif in_start == 2:
         draw_result(sub.init(user_nam,user_nam))
     elif in_start == 3:
         draw_result(mult.init(user_nam,user_nam))
+
+
 run()
- 

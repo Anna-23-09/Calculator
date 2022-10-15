@@ -4,7 +4,7 @@ def menu_inp(val: str) -> int:
     """ Меню верхнего уровня """
     res = ' '
     while res not in val:
-        res = menu_check(input('Введите выбор:'))
+        res = menu_check(input('Введите выбор:'))   # Причем тут проверка (menu_check) уже вроде как уже не нужна
     else:
         return int(res)
 

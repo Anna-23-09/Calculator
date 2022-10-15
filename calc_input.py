@@ -1,6 +1,6 @@
 from cheks import menu_check
 
-def menu_inp(val: str):
+def menu_inp(val: str):   #ars#  что принимает эта функция, стороку ? чтодолжно прийти?
     res = False
     while not res:
         res = menu_check(input('Введите выбор:'))

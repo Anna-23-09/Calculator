@@ -15,22 +15,42 @@ def user_nam(start: int):               #ars# для понимания
 
 def run():
     draw_menu_start()
-    
     in_run = menu_inp('012')                # первое меню
     if in_run == 1:
         draw_menu_real()                    # меню реальных чисел
-        in_start = menu_inp('012345678')    
+        in_start = menu_inp('012345678')
+        operation(in_run,in_start)    
     elif in_run ==2:
         draw_menu_complex()                 # меню комплексных чисел
-        in_start = menu_inp('012345678')
+        in_start = menu_inp('0123456')
+        operation(in_run,in_start)
     else: exit
-      
-    if in_start == 1: # Отрисовывается результать сложения первого и второго числа для обоих случиев
-        draw_result(sum.init(user_nam(in_run),user_nam(in_run)))
-    elif in_start == 2:# Отрисовывается результать вычитания второго из первого числа для обоих случиев
-        draw_result(sub.init(user_nam(in_run),user_nam(in_run)))
-    elif in_start == 3:# Отрисовывается результать перемножения первого и второго числа для обоих случиев
-        draw_result(mult.init(user_nam(in_run),user_nam(in_run)))
 
-
+def operation(tip_num:int,tip_oper:int): 
+    if tip_oper == 1: # Отрисовывается результать сложения первого и второго числа для обоих случиев
+        nam1=user_nam(tip_num)      #запрашиваем 1е число
+        nam2=user_nam(tip_num)      #запрашиваем 2е число
+        result=sum.init(nam1,nam2)  #фиксируем результат
+        draw_result(result)         #выводим результат
+        loger(nam1,"+",nam2,result) #отправляем в логер
+    elif tip_oper == 2:# Отрисовывается результать вычитания второго из первого числа для обоих случиев
+        draw_result(sub.init(user_nam(tip_num),user_nam(tip_num)))
+    elif tip_oper == 3:# Отрисовывается результать перемножения первого и второго числа для обоих случиев
+        draw_result(mult.init(user_nam(tip_num),user_nam(tip_num)))
+    elif tip_oper == 4:# Отрисовывается результать деления
+        draw_result(#   модуль деления   
+    elif tip_oper == 5:
+        if tip_num == 1:
+            draw_result(# модуль целочисленного деления #  
+        else: draw_result(# модуль возведения в степень #
+    elif tip_oper == 6:
+        if tip_num == 1:
+            draw_result(# модуль остатка от деления #   
+        else: draw_result(# модуль квадратного корня #
+    elif tip_oper == 7:
+        draw_result(# модуль возведения в сепень #
+    elif tip_oper == 8:
+        draw_result(# модуль квадратного корня #
+    elif tip_oper == 0:# переход в предыдущие меню
+        run()
 run()

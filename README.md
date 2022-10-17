@@ -1,7 +1,7 @@
 # Calculator status WiP
 | person              | to do               |   status |   done   |  есть изменения для внесения     |
 |---|---|---|---|---|
-| Анна Толстова       | complex.py          |   |   |   |
+| Анна Толстова       | complex.py          |   | X |   |
 | Арсений Беляев aza  | conroller.py        |   |   |   |
 | Ирина Боярчукова    |                     |   |   |   |
 | Анна Орлова         |                     |   |   |   |

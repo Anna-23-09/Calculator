@@ -22,7 +22,6 @@
 ## user_interface.py    view —> меню работы с Юзером
     draw_start_menu()
     draw_real_menu()
-        draw_real_divs_menu()
     draw_complex_menu()
 
     start >
@@ -62,11 +61,6 @@
     2. input_real.py
 
 ## real_num.py
-> import calc_input as cain
->> cain(1) return [n1, n2]
-
-> import calc_verify <!-- (calc_verify.py ???)  -->
->> call calc_verify(n1, n2)>>
 
     1. + sum
         * > import calc_sum
@@ -80,30 +74,27 @@
         * > import calc_mult
         * >> call calc_mult(n1, n2)
         * > return res_num
-    4. division
-        1. / division
+    4. / division
             * > import calc_div
             * > op = /
             * >> call calc_div(op, n1, n2)
             * > return res_num
-        2. // division
+    5. // division
             * > import calc_div
             * > op = //
             * >> call calc_div(op, n1, n2)
             * > return res_num
-        3. % division
+    6. % division
             * > import calc_div
             * > op = %
             * >> call calc_div(op, n1, n2)
             * > return res_num
-    4. ** power
-    5. **.5 sqrt
+    7. ** power
+    8. sqrt
 
     0. previous menu
 
 ## complex.py —> Работа с Комплексными числами
-> import calc_verify <!-- (calc_verify.py ???)  -->
->> call calc_verify(n1, n2)>>
 
     1. sum
     2. minus

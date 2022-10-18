@@ -14,8 +14,8 @@ def menu_inp(val: str) -> int:
         return int(res)
 
 
-def real_inp(val: int) -> list:          # Возвращаем list из val чисел реальных
-    # check ??
+def real_inp(val) -> list:          # Возвращаем list из val чисел реальных
+    # check ??              вроде договаривались что для проверки ввода приходит строка как в меню_инп
     inp: list = []
     for i in range(val):
         print(f'Вам надо ввести {val} реальных(-ое) чисел(-ло):')
@@ -27,8 +27,8 @@ def real_inp(val: int) -> list:          # Возвращаем list из val ч
     return inp
 
 
-def complex_inp(val: int) -> list:      # Возвращаем list из val чисел комплексных
-    # check ??
+def complex_inp(val) -> list:      # Возвращаем list из val чисел комплексных
+    # check ??              вроде договаривались что для проверки ввода приходит строка как в меню_инп
     inp: list = []
     for i in range(val):
         print(f'Вам надо ввести {val} комплексных(-ое) чисел(-ло):')

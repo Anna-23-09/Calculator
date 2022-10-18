@@ -26,3 +26,4 @@ def complex_inp() -> complex:
     temp2_comp = float(
         input(f"Введите мнимую часть комплексного числа: "))
     return complex(temp1_comp, temp2_comp)
+

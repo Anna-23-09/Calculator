@@ -11,11 +11,13 @@ import model_div_ as div_
 import model_sqrt as sqrt
 
 
+
 # all_num = "0123456789.,"
 
 
 def user_num(start: int):  # ars# для понимания
     if start == 1:                      # что запрашиваем используем переменную
+
         return real_inp()  # цифра берется из выбора первого меню
     else:
         # если 1 то рациональные если 2 то комплексные
@@ -44,17 +46,23 @@ def operation_2num(tip_num: int, oper, znak):
     num2 = user_num(tip_num)  # запрашиваем 2е число
     result = oper.init(num1, num2)  # фиксируем результат
     # loger(nam1,znak,nam2,result)    #отправляем в логер
+
     return result
+    # return (result)
+
 
 
 def operation(tip_num: int, tip_oper: int):
     if tip_oper == 1:  # Отрисовывается результать сложения первого и второго числа для обоих случиев
+
         draw_result(operation_2num(tip_num, sum, "+"))  # выводим результат
+
     elif tip_oper == 2:  # Отрисовывается результать вычитания второго из первого числа для обоих случиев
         draw_result(operation_2num(tip_num, sub, "-"))
     elif tip_oper == 3:  # Отрисовывается результать перемножения первого и второго числа для обоих случиев
         draw_result(operation_2num(tip_num, mult, "*"))
     elif tip_oper == 4:  # Отрисовывается результать деления
+
         draw_result(operation_2num(tip_num, div, "/"))  # модуль деления
     elif tip_oper == 5:
         if tip_num == 1:

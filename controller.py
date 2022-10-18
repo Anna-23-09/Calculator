@@ -75,12 +75,13 @@ def operation(tip_num: int, tip_oper: int):
             # модуль остатка от деления #
             draw_result(operation_2num(tip_num, rem, "%"))
         else:
-            draw_result()   # модуль квадратного корня #
+            draw_result(operation_2num(tip_num, sqrt, "sqrt"))  # тут требуется одно число !!!! это типа важно 
+                                                                # модуль квадратного корня #
     elif tip_oper == 7:
         # модуль возведения в сепень #
         draw_result(operation_2num(tip_num, pow, "**"))
     elif tip_oper == 8:         
-        draw_result(operation_1num(tip_num, sqrt, "sqrt"))      # тут требуется одно число !!!! это типа важно
+        draw_result(operation_2num(tip_num, sqrt, "sqrt"))      # тут требуется одно число !!!! это типа важно
                                                                 # модуль квадратного корня #
     elif tip_oper == 0:         # переход в предыдущие меню
         run()

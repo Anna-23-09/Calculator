@@ -9,18 +9,20 @@ def menu_inp(val: str) -> int:
     res = ' '
     while res not in val:                           # Сравниваем со строкой которая пришла в вызове
         # Причем тут проверка (menu_check) уже вроде как уже не нужна
-        res = menu_check(input('Введите выбор:'))
+        res = menu_check(input('Введите выбор: '))
     else:
         return int(res)
 
 
 def real_inp():
     # check ??
+    print()
     return float(input(f"Введите рациональное число: "))
 
 
 def complex_inp() -> complex:
     # check ??
+    print()
     temp1_comp = float(
         input(f"Введите действительную часть комплексного числа: "))
     temp2_comp = float(

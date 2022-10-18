@@ -16,7 +16,7 @@ def menu_inp(val: str) -> int:
 
 def real_inp():
     # check ??
-    return float(input(f"Введите реальное число: "))
+    return float(input(f"Введите рациональное число: "))
 
 
 def complex_inp() -> complex:

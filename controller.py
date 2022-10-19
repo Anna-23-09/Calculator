@@ -9,6 +9,7 @@ import model_pow as pow
 import model_mod as rem
 import model_div_ as div_
 import model_sqrt as sqrt
+import logger as log
 
 def user_num(start: int):               # ars# для понимания
     if start == 1:                      # что запрашиваем используем переменную
@@ -38,13 +39,13 @@ def operation_2num(tip_num: int, oper, znak):
     num1 = user_num(tip_num)  # запрашиваем 1е число
     num2 = user_num(tip_num)  # запрашиваем 2е число
     result = oper.init(num1, num2)  # фиксируем результат
-    # loger(nam1,znak,nam2,result)    #отправляем в логер
+    log.logger(num1,znak,result,num2)    #отправляем в логер
     return result
 
 def operation_1num(tip_num: int, oper, znak):
     num1 = user_num(tip_num)  # запрашиваем 1е число
     result = oper.init(num1)  # фиксируем результат
-    # loger(nam1,znak,result)    #отправляем в логер
+    log.logger(num1,znak,result)     #отправляем в логер
     return result
 
 def operation(tip_num: int, tip_oper: int):
@@ -80,3 +81,6 @@ def operation(tip_num: int, tip_oper: int):
         draw_result(operation_1num(tip_num, sqrt, "sqrt"))
     elif tip_oper == 0:         # переход в предыдущие меню
         run()
+
+
+

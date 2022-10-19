@@ -1,4 +1,5 @@
-from cheks import menu_check
+from cheks import menu_check, digit_check
+import logger as log
 
 
 def menu_inp(val: str) -> int:
@@ -15,16 +16,19 @@ def menu_inp(val: str) -> int:
 
 
 def real_inp():
-    # check ??
-    print()
-    return float(input(f"Введите рациональное число: "))
+    a = input(f"Введите рациональное число: ")#запрос числа
+    log.write_log(f"число {a}, ")#отправка в логер что введи
+    a = digit_check(a)#проаерка является ли введенное числом, если нет спрашивает  повтороно пока не дождется числа
+    return a
 
 
 def complex_inp() -> complex:
-    # check ??
     print()
-    temp1_comp = float(
-        input(f"Введите действительную часть комплексного числа: "))
-    temp2_comp = float(
-        input(f"Введите мнимую часть комплексного числа: "))
+    temp1_comp = input(f"Введите действительную часть комплексного числа: ")#запрос числа
+    log.write_log(f"число {temp1_comp}, ")#отправка в логер что введи
+    temp1_comp = digit_check(temp1_comp) #проаерка является ли введенное числом, если нет спрашивает  повтороно пока не дождется числа
+    temp2_comp = input(f"Введите действительную часть комплексного числа: ")
+    log.write_log(f"число {temp2_comp}, ")
+    temp2_comp = digit_check(temp2_comp) 
+        
     return complex(temp1_comp, temp2_comp)

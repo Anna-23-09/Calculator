@@ -5,12 +5,16 @@ SEP = ' '
 TAB = 8
 LOG_FILE = 'calculator.log'
 
-def logger(n1, op, n2, res):
+def logger(n1, op, res,  n2 = ''):
     global TAB
     global SEP
     dt_format = "%D"+SEP + '-' + SEP+"%H:%M:%S"
-    t = datetime.now().strftime(dt_format) + SEP*TAB + \
-        str(n1) + SEP + op + SEP + str(n2) + SEP + '=' + SEP + str(res)
+    if n2:
+        t = datetime.now().strftime(dt_format) + SEP*TAB + \
+            str(n1) + SEP + op + SEP + str(n2) + SEP + '=' + SEP + str(res)
+    else:
+        t = datetime.now().strftime(dt_format) + SEP*TAB + \
+            str(n1) + SEP + op + SEP + '=' + SEP + str(res)
     write_log(t+'\n')
     print(t)
     pass
@@ -22,3 +26,5 @@ def write_log(l: str):
     else:
         with open(LOG_FILE, 'w', encoding='utf-8') as lf:
             lf.write(l)
+
+# logger(9, 'sqrt', 3)

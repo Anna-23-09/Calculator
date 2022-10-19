@@ -16,17 +16,17 @@ def menu_inp(val: str) -> int:
 
 
 def real_inp():
-    a = input(f"Введите рациональное число: ")
-    log.write_log(f"число {a}, ")
-    a = digit_check(a)
-    return float(a)
+    a = input(f"Введите рациональное число: ")#запрос числа
+    log.write_log(f"число {a}, ")#отправка в логер что введи
+    a = digit_check(a)#проаерка является ли введенное числом, если нет спрашивает  повтороно пока не дождется числа
+    return a
 
 
 def complex_inp() -> complex:
     print()
-    temp1_comp = input(f"Введите действительную часть комплексного числа: ")
-    log.write_log(f"число {temp1_comp}, ")
-    temp1_comp = digit_check(temp1_comp) 
+    temp1_comp = input(f"Введите действительную часть комплексного числа: ")#запрос числа
+    log.write_log(f"число {temp1_comp}, ")#отправка в логер что введи
+    temp1_comp = digit_check(temp1_comp) #проаерка является ли введенное числом, если нет спрашивает  повтороно пока не дождется числа
     temp2_comp = input(f"Введите действительную часть комплексного числа: ")
     log.write_log(f"число {temp2_comp}, ")
     temp2_comp = digit_check(temp2_comp) 

@@ -10,7 +10,7 @@ def logger(n1, op, res,  n2=''):
     global TAB
     global SEP
     dt_format = "%D"+SEP + '-' + SEP+"%H:%M:%S"
-    if n2:
+    if n2 !='':
         t = datetime.now().strftime(dt_format) + SEP*TAB + \
             str(n1) + SEP + op + SEP + str(n2) + SEP + '=' + SEP + str(res)
     else:

@@ -5,7 +5,8 @@ SEP = ' '
 TAB = 8
 LOG_FILE = 'calculator.log'
 
-def logger(n1, op, res,  n2 = ''):
+
+def logger(n1, op, res,  n2=''):
     global TAB
     global SEP
     dt_format = "%D"+SEP + '-' + SEP+"%H:%M:%S"
@@ -15,9 +16,10 @@ def logger(n1, op, res,  n2 = ''):
     else:
         t = datetime.now().strftime(dt_format) + SEP*TAB + \
             str(n1) + SEP + op + SEP + '=' + SEP + str(res)
-    write_log(t+'\n')
-    print(t)
+    write_log('\n'+t)
+    print("\n"+t)
     pass
+
 
 def write_log(l: str):
     if exists(LOG_FILE):

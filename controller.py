@@ -92,7 +92,7 @@ def operation(tip_num: int, tip_oper: int):
         draw_result(operation_2num(tip_num, pow, "**"))
     elif tip_oper == 8:
         # модуль квадратного корня #
-        log.write_log(f", 7")
+        log.write_log(f", 8")
         draw_result(operation_1num(tip_num, sqrt, "sqrt"))
     elif tip_oper == 0:         # переход в предыдущие меню
         log.write_log(f", 0")

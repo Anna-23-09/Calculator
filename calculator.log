@@ -25,3 +25,6 @@ operation steps: 1, 5, input: 12, input: 0
 operation steps: 2, 4, input: 0, input: 0, input: 0, input: 0
 10/20/22 - 18:04:07        0j / 0j = 0
 !exit!
+operation steps: 1, 6, input: 1, input: 0
+10/20/22 - 22:57:07        1 % 0 = dividion by zero error!
+!exit!

@@ -17,7 +17,7 @@ def logger(n1, op, res,  n2=''):
         t = datetime.now().strftime(dt_format) + SEP*TAB + \
             str(n1) + SEP + op + SEP + '=' + SEP + str(res)
     write_log('\n'+t)
-    print("\n"+t)
+    # print("\n"+t)
     pass
 
 
